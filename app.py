@@ -1,8 +1,9 @@
 import numpy as np
 import pickle
 import streamlit as st
+from pathlib import Path
 
-loaded_model = pickle.load(open('D:/Websites/WineQualityPrediction/trained_model.sav','rb'))
+loaded_model = pickle.load(open(Path('trained_model.sav'),'rb'))
 
 def wine_quality_prediction(input_data):
 
